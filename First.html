@@ -1,30 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Title</title>
-	<meta charset="utf-8">
+<!--we can validate our html page using W-->
+<!--HTMl- Hyper text markup language and it is controlled by W3c.org world web wide web Consoritum-- >
+<!--DOCTYPE html><!it is default treated as is document of html5 and it help browser to get display web page correctly-->
 
+<html lang="en"><!--html 5 on 2014,   lang attribute of html tag is used specify the lang of web page used by search engine or help it to get specific language or regional result get display , first two letter is enough but if there is dialect use tqwo more letter example -(en-us)-->
+<head>	<!--it contain meta information about the html document example -document title, character set, styles, links, scripts, and other meta information-- >
+	
+	<title>Title</title>	<!--it conatin tilte of page get displayed on web page tab-->
+	
+	
+	<!--The <base> element specifies the base URL and base target for all relative URLs in a page:-->
+	<base href="https://www.w3schools.com/images/" target="_blank">
+	
+	<!--Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.-->
+	<!--Define the character set used:-->
+	<meta charset="utf-8"><!--UTF-8 is prefered coding for html files -->
+	<!--Define a description of your web page:-->
 	<meta name="description" content="All HTML5 Tag"/>
+	<!--Define keywords for search engines:-->
+	<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+	<!--Define the author of a page:-->
 	<meta name="author" content="Brajesh Mishra"/>
+	<!--Refresh document every 30 seconds:-->
+	<meta http-equiv="refresh" content="30">
+	<!--good visual view of website on different devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 </head>
-<body>
+<!--
+-------------------Note------------------------
+Without a forward slash at the end of subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the end of the address, and then create a new request.
+-->	
 	
-	
+<!--title attribute is used with most of the tag it get display as a tooltip when mouse is hover over the tag area-->	
 
+<!--it is recpmmded value of attribute must be in double qutoe but if we require double quote within value than value is wrapped in single qutoe example-'here is the "value"C validator'-->
+	
+<!--heading are important part of a html page beacuse search engine uses headings for indexing and found the type of document it conatin-->
+
+<!--style can be provided to html page using style as attribute for inline CSS(example-<p style="Property:value;property:value;">) or as style tag  withinh head tag for internal CSS of link tag to link external CSS file <link rel="stylesheet" href="styles.css(filr name )"> -->	
+
+<!-- html Color can be defined using color names, or RGB((0,0,0) for black and (255,255,255) for white), HEX#rrggbb, HSLhsl(hue, saturation, lightness) Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+
+Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white, RGBArgba(red, green, blue, alpha) here alpha is for optacity and The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):, HSLAhsla(hue, saturation, lightness, alpha) values.-->
+	
+	
+<!--we use id which is uniqully identified by the id selector for CSS property or different purpose
+example-let a element have id as "paragraph" so we define CSS for it as in CSS file
+#paragraph{
+}
+if paragrqaph is a class so we define like that
+.paragraph{
+}
+
+--------or----
+
+to define the CSS for a particular class of element or group of element we use class attribute let a <p> element have a class as "paragraph" so we define the property for all p element have class name as "paragraph"
+
+p.paragraph{
+}
+
+it can also be done with id tag
+
+we can also go to particular element
+like <p> tag contaion <a> tag 
+so to specify property for a tag we use
+
+p a{
+}
+it specify that apply CSS to tag have first p than a with in it 
+
+
+we can give mutiple class name to particuklar tag
+<p class="abc bcd">  
+we can define property for both class and it follow both 
+mutiple element have same class name and single element have mutliple class name 
+
+
+
+
+
+
+The class name can also be used by JavaScript to perform certain tasks for elements with the specified class name.
+
+----------------difference between class and id attribute-----------------------------------
+An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple element
+
+
+JavaScript can access an element with a specified id by using the getElementById() method:
+-->
+	
+<!--
+HTML 5
+HTML5 introduced the <picture> element to add more flexibility when specifying image resources.
+The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+---------------------------------------Note----------------------------------------------------
+Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags matched.
+
+
+
+HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
+The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scalin
+-->	
+	
+<!--
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+
+create a bookmark with the id attribute:
+<h2 id="C4">Chapter 4</h2>
+
+hen, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+<a href="#C4">Jump to Chapter 4</a>
+
+Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+-->	
+
+	
+	
+<!--Iframe as target for the link(inline frame )to show web page with in frame 
+
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+-->
+	
+	
+<!--script tag is used to specify client side script with in head tag of we cann also add server side script using src attribute of script tag
+
+<script>M/script>
+<script src="abc.js'>
+
+
+The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts:
+<noscript></noscript>
+-->	
+	
+	
+<!--HTML Layout Techniques
+There are five different ways to create multicolumn layouts. Each way has its pros and cons:
+
+HTML tables (not recommended)
+CSS float property
+CSS flexbox---Flexbox is a new layout mode in CSS3
+CSS framework---If you want to create your layout fast, you can use a framework, like W3.CSS or Bootstrap.
+CSS grid--The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+-->	
+	
+	
+	
+<!--
+Responsive Layout
+1.meta viewport
+2.Responsive Images(If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:)
+
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+3.Responsive Text Size--The text size can be set with a "vw" unit, which means the "viewport width".
+<h1 style="font-size:10vw">Hello World</h1>
+
+
+Media Queries
+With media queries you can define completely different styles for different browser sizes.
+-->
+	
+	
+<!--
+HTML Entities
+Reserved characters in HTML must be replaced with character entities.
+-->
+<body><!--Visual part of page contained by it -->
+	
+	
+	<!--W3C recommands lowercase tage but it is not mandatory-->
+	<!--All html element have attribute that specify some additional information about the tag, key ="value"  pair-->
+	<!--values are specified in terms of pixel-->
+	
+	<!--horizontal row-->
+	<hr>
+	
+	
 	<!-- TITLES -->
-	<h1>This is heading 1</h1>
+	<h1>This is heading 1</h1><!--Bigger amoung the h1 to h6-->
 	<h2>This is heading 2</h2>
-	<h3>This is heading 3</h3>
-	<h4>This is heading 4</h4>
+	<h3>This is heading 3</h3>			<!--we can chaneg the style useing iinline, internal and extrenal CSS-->
+	<h4>This is heading 4</h4>			<!--html automatically add some space before and after the heading tag-->
 	<h5>This is heading 5</h5>
-	<h6>This is heading 6</h6>
+	<h6>This is heading 6</h6><!--smallest amoung the h1 to h6-->
 
+	<br><!--Empty element can be closed like this <br/>-->
+	
 	<!-- TEXT -->
 
 	<p>This is paragraph. And there are some words at
-	<sup>the top</sup> and at 
-	<sub>the bottom</sub>
+	<sup>the top</sup> and at 			<!--html automatically add some space before and after the paragraph-->
+	<sub>the bottom</sub>				<!--it get treated as paragraph no matter if you give keyboard enter in paragraph untill unless you don't use the html tag -->
 	 of the line.</p>
 
 	<p>Hi, I am 
@@ -51,7 +232,7 @@
 	<kbd>Keyboard input</kbd>
 	<br>
 	<var>Variable</var>
-	<pre>Preformatted text</pre></p>
+	<pre>Preformatted text</pre></p><!--it preserve the enter and spaces we give while making html page opposite of <p> tag-->
 
 	<!-- TEMPLATE -->
 	<template>
@@ -60,7 +241,7 @@
 
 	<!-- INLINE BLOCK ELEMENT -->
 	<div>
-		<span>Hello span in div !</span>
+		<span>Hello span in div !</span><!--span is used to to group small text or part as it is inline element so it only cover space wrapped to text o matter not greater than that but div is block element so it cover width to width area of a window-->
 	</div>
 
 	<!-- ABBREVIATION AND ACRONYM-->
@@ -69,13 +250,23 @@
 
 
 	<!-- LINKS -->
+	<!--The target attribute specifies where to open the linked document.
+
+	The target attribute can have one of the following values:
+	
+	_blank - Opens the linked document in a new window or tab
+	_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+	_parent - Opens the linked document in the parent frame
+	_top - Opens the linked document in the full body of the window
+	framename - Opens the linked document in a named frame
+	-->
 	<a href="http://www.google.fr" target="_blank" title="Link to Google">Google</a>
 
-	<!-- BLOCKQUOTE -->
+	<!-- BLOCKQUOTE --><!--it is used for multiline quote and q is used for short quote-->
 	<blockquote cite="http://www.macleans.ca/education/uniandcollege/why-we-should-forget-einsteins-tree-climbing-fish/">
 		Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid. <br>
 		
-	<cite>A random guy in universe.</cite>
+	<cite>A random guy in universe.</cite>		<!--it get diaplay in italic and used for work title-- >
 	</blockquote>
 
 	<!-- LINE BREAK -->
@@ -83,19 +274,37 @@
 
 	<!-- REVERSE TEXT -->
 	<p>Black Mirror | 
-	<bdo dir="rtl">Black Mirror</bdo></p>
-
+	<bdo dir="rtl">Black Mirror</bdo></p>		<!--text get display in reverse order-->			
+		
 	<!-- APPLET -->
 	<applet code="#" width="350" height="350">
 		Code for Java applet here.
 	</applet>
 
 	<!-- LISTS -->
+	<!--
+	The CSS list-style-type property is used to define the style of the list item marker:
+	disc	Sets the list item marker to a bullet (default)
+	circle	Sets the list item marker to a circle
+	square	Sets the list item marker to a square
+	none	The list items will not be marked	
+	
+	Note-------------
+	Use the CSS property float:left or display:inline to display a list horizontally
+	-->
 	<ul>
 		<li>1</li>
 		<li>2</li>
 		<li>3</li>
 	</ul>
+		
+	<!--type attribute of ol used to specify , start attribute specify starting position of ordered list start="50" 
+	type="1"	The list items will be numbered with numbers (default)
+	type="A"	The list items will be numbered with uppercase letters	
+	type="a"	The list items will be numbered with lowercase letters
+	type="I"	The list items will be numbered with uppercase roman numbers
+	type="i"	The list items will be numbered with lowercase roman numbers
+	-->	
 	<ol>
 		<li>One</li>
 		<li>Two</li>
@@ -114,10 +323,15 @@
 
 	<!-- IMAGES -->
 	<figure>
+		<!--alt attibute specify the alternate text displayed if image get not displayed ,and value of width in pixels -->
+		<!--Use the CSS float property to let the image float to the right or to the left of a text: style="float:right"
+-->
 		<img src="img/vader.gif" alt="Darth Vader dancing" width="300" height="auto" />
+		
 		<figcaption>Darth Vader dancing</figcaption>
 	</figure>
-
+<!--The name attribute of the <map> tag is associated with the <img>'s usemap attribute
+-->
 	<img src="img/breaking-bad.jpg" width="400" height="auto" alt="Breaking Bad Actors" usemap="#map">
 	<map name="map">
 		<area shape="rect" coords="10,10,190,250" target="_blank" alt="Bryan Cranston" href="img/Bryan-Cranston.jpg">
@@ -244,8 +458,9 @@
 	</form>
 
 	<!-- TABLE -->
+		<!--colspan and roowspan is used with td tag to merge column and row ,border-collapse  CSS property  used to  print table as with single line border-->
 	<table style="width:100%; text-align: center;">
-		<caption>Some characters of GoT</caption>
+		<caption>Some characters of GoT</caption><!--table heading -->
 		<colgroup>
 			<col style="background-color: #7f8c8d">
 			<col style="background-color: #e74c3c">
@@ -309,7 +524,7 @@
 	<!-- ADRESS -->
 	<address>
 		Marc Lunel<br>
-		See my work on <a href="https://www.github.com/MarcLunel">Github</a><br>
+		See my work on <a href="https://www.github.com/MarcLunel">Github</a><br><!it automatically add a line break before and after  and text get displaye in italic>
 		Contact me at <a href="mailto:marc.l64@outlook.fr">this email</a>
 	</address>
 
