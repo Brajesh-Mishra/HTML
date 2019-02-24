@@ -434,7 +434,57 @@ Reserved characters in HTML must be replaced with character entities.
 		</fieldset>
 	</form>
 	<hr>
-	<form action="" method="POST" id="registerForm">
+	<form action="" method="POST" id="registerForm"><!--action attribute is used to define what happen when submit button is clicked ,it define the file name on server where the data is send after submit button is clicked
+	If the action attribute is omitted, the action is set to the current page.
+
+
+	The target attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+
+	The default value is "_self" which means the form will be submitted in the current window.
+
+	he method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:
+	The default method when submitting form data is GET.
+
+
+	Each input field must have a name attribute to be submitted.
+	If the name attribute is omitted, the data of that input field will not be sent at all.
+	
+	The <fieldset> element is used to group related data in a form.
+	If the type attribute is omitted, the input field gets the default type: "text".
+	
+	The <legend> element defines a caption for the <fieldset> element.
+
+	The <option> elements defines an option that can be selected.
+	By default, the first item in the drop-down list is selected.
+	To define a pre-selected option, add the selected attribute to the option:
+	Use the size attribute to specify the number of visible values:
+	Use the multiple attribute to allow the user to select more than one value:
+
+	<textarea name="message" rows="10" cols="30">
+	The cat was playing in the garden.
+	</textarea>
+
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+	HTML5 <datalist> Element
+	The <datalist> element specifies a list of pre-defined options for an <input> element.
+	Users will see a drop-down list of the pre-defined options as they input data.
+	The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+	The <output> element represents the result of a calculation 
+
+	The value attribute specifies the initial value for an input field:
+	The readonly attribute specifies that the input field is read only (cannot be changed):
+	The disabled attribute specifies that the input field is disabled.
+
+	A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form:
+
+
+	The size attribute specifies the size (in characters) for the input field:
+
+
+	The maxlength attribute specifies the maximum allowed length for the input field:
+-->
 		<fieldset>
 			<legend>Register</legend>
 			<label for="name">Username :</label>
